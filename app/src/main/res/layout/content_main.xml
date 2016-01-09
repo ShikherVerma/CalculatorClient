@@ -12,4 +12,54 @@
     tools:context="com.shikherverma.calculatorclient.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="numberSigned|numberDecimal"
+      android:ems="10"
+      android:id="@+id/input_one"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"/>
+
+    <Spinner
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/spinner"
+      android:layout_below="@+id/input_one"
+      android:entries="@array/operator_array"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"/>
+
+    <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="numberSigned|numberDecimal"
+      android:ems="10"
+      android:id="@+id/input_two"
+      android:layout_below="@+id/spinner"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"/>
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Calculate"
+      android:id="@+id/button"
+      android:layout_below="@+id/input_two"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/fab_margin"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Result"
+    android:textColor="@android:color/darker_gray"
+    android:id="@+id/result"
+    android:layout_below="@+id/button"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"/>
+
 </RelativeLayout>
