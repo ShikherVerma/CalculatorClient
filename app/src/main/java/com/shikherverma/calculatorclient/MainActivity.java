@@ -23,9 +23,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
-  public static String LOG = MainActivity.class.toString();
-  public static String URL = "http://adarshaj.cse.iitk.ac.in/operation.php/";
-  public static String REQUEST_TAG = "REQUEST_TAG";
+  public static final String LOG = MainActivity.class.toString();
+  public static final String URL = "http://adarshaj.cse.iitk.ac.in/operation.php/";
+  public static final String REQUEST_TAG = "REQUEST_TAG";
   EditText mInputOne;
   EditText mInputTwo;
   Spinner mOperator;
